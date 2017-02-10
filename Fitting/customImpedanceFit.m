@@ -55,11 +55,11 @@ switch(circuitVersion)
         upperBounds    = [ Inf,  Inf,   Inf,  1.0];
     case 'RRQRQ'
         pNames         = {'R0', 'R1',  'Y1', 'n1',  'R2',  'Y2', 'n2'};
-        lowerBounds    = [   1,    1,     0,  0.0,     1,     0,  0.0];
+        lowerBounds    = [   1e2,    1,     0,  0.0,     1,     0,  0.0];
         upperBounds    = [ Inf,  Inf,   Inf,  1.0,   Inf,   Inf,  1.0];
     case 'RRQRQRQ'
         pNames         = {'R0', 'R1',  'Y1', 'n1',  'R2',  'Y2', 'n2', 'R3', 'Y3', 'n3'};
-        lowerBounds    = [   1,    1,    0,  0.0,      1,     0,  0.0,    1,    0,  0.0];
+        lowerBounds    = [   1e2,    1,    0,  0.0,      1,     0,  0.0,    1,    0,  0.0];
         upperBounds    = [ Inf,  Inf,  Inf,  1.0,    Inf,   Inf,  1.0,  Inf,  Inf,  1.0];
     case '6a'
         pNames         = {'Rion', 'Rion_s', 'Cion_s', 'Cchem', 'Ceon_p', 'R0'};
